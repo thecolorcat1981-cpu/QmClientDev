@@ -2012,6 +2012,8 @@ std::string CQmClient::BuildQmAnonymousEmoteHello() const
 	Writer.WriteStrValue("hello");
 	Writer.WriteAttribute("v");
 	Writer.WriteIntValue(2);
+	Writer.WriteAttribute("client_type");
+	Writer.WriteStrValue("qm");
 	Writer.WriteAttribute("client_id");
 	Writer.WriteStrValue(m_aQmAnonymousClientId);
 	Writer.WriteAttribute("player_name");
